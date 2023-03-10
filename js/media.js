@@ -17,9 +17,27 @@ function calcularMedia() {
   const nota3 = parseFloat(document.getElementById("nota3").value);
   const nota4 = parseFloat(document.getElementById("nota4").value);
 
+  const mediaGeral = (nota1 + nota2 + nota3 + nota4) / 4;
+
+  if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 || nota3 < 0 || nota3 > 10 || nota4 < 0 || nota4 >10){
+  alert ("Nota inválida! Digite um número entre 0 e 10")
+  }
   let mensagem = "";
   // evite mexer no código acima!
 
+ if (mediaGeral === 0){
+    mensagem = "Infelizmente você zerou a prova :( "
+  } else if (mediaGeral >= 0.1 && mediaGeral <= 3){
+    mensagem = "Caramba, deu ruim, você obteve " + mediaGeral +  " de média!Estude mais e tente novamente!" 
+  } else if (mediaGeral >= 3.1 && mediaGeral <= 5.9){
+    mensagem = "Você obteve " + mediaGeral + "!Falta pouco para a média"
+  } else if (mediaGeral >= 6 && mediaGeral <= 7){
+    mensagem = "Você está na média com " + mediaGeral
+  } else if (mediaGeral >= 7.1 && mediaGeral <= 9.9){
+    mensagem = "Notão! Sua média é " + mediaGeral
+  } else if (mediaGeral === 10){
+    mensagem = "Hoje é seu aniversário? Pq você ta de parabêns! " + mediaGeral + " de média"
+  }
 
 
 
