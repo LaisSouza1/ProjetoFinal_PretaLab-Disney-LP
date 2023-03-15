@@ -1,8 +1,11 @@
 body {
-  background-color: #F5F5F5;
-  color: #555;
+  background: #0f0c29;  
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+
   font-size: 1.1em;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: rgb(239, 242, 245);
   width: 100%;
   overflow-x: hidden;
   margin: 0;
@@ -11,11 +14,13 @@ body {
 
 h1 {
   text-align: center;
+  color: antiquewhite;
 }
 
 h2 {
   margin: 0;
   margin-bottom: 15px;
+  color: antiquewhite;
 }
 
 main {
@@ -24,10 +29,13 @@ main {
 
 p {
   text-align: "left";
+  color: antiquewhite;
 }
 
 section {
-  border: thick double #32a1ce;;
+  border: thick double #70d8bd;;
+  border-radius: 10px 20px;
+  -webkit-border-radius: 10px 20px;
   margin-bottom: 30px;
   width: 50%;
 }
@@ -52,6 +60,7 @@ button {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  color: antiquewhite;
 }
 
 #btnSituacao{
